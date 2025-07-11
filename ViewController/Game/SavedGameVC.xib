@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SavedGameVC" customModule="TUANNM_MV_2563" customModuleProvider="target">
+            <connections>
+                <outlet property="savedClv" destination="AId-m6-TDL" id="zgQ-9Y-Mgy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AId-m6-TDL">
+                    <rect key="frame" x="0.0" y="62" width="440" height="860"/>
+                    <color key="backgroundColor" name="Clear"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YT6-z2-Bzh">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9R-Yt-ePq">
+                    <rect key="frame" x="380" y="62" width="40" height="36.333333333333343"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="og5-ZU-kDB"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Frame 352"/>
+                    <connections>
+                        <action selector="game:" destination="-1" eventType="touchUpInside" id="2ng-Jh-60i"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="p9R-Yt-ePq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0mF-35-ewu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p9R-Yt-ePq" secondAttribute="trailing" constant="20" id="L3h-hk-Q19"/>
+                <constraint firstItem="AId-m6-TDL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MbT-nR-TF5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AId-m6-TDL" secondAttribute="bottom" id="PNC-NC-eIS"/>
+                <constraint firstItem="AId-m6-TDL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fgr-LJ-zgA"/>
+                <constraint firstItem="AId-m6-TDL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hQQ-AU-bum"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Frame 352" width="36" height="36.333332061767578"/>
+        <namedColor name="Clear">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

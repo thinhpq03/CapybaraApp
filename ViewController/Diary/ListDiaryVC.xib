@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListDiaryVC" customModule="TUANNM_MV_2563" customModuleProvider="target">
+            <connections>
+                <outlet property="listDiaryClv" destination="Yb2-J2-aVU" id="FGu-Ps-BZU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Yb2-J2-aVU">
+                    <rect key="frame" x="0.0" y="112" width="440" height="810"/>
+                    <color key="backgroundColor" name="Clear"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wIn-H2-8oH">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzz-xx-gck">
+                    <rect key="frame" x="0.0" y="62" width="440" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKz-PV-JdR">
+                            <rect key="frame" x="380" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="af9-cw-IGU"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Frame 352"/>
+                            <connections>
+                                <action selector="createDiary:" destination="-1" eventType="touchUpInside" id="ut5-CA-p4t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MM3-lr-q1U">
+                            <rect key="frame" x="20" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Ku6-X6-UIt"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Vector"/>
+                            <connections>
+                                <action selector="statistical:" destination="-1" eventType="touchUpInside" id="7FG-aF-gB6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qKz-PV-JdR" secondAttribute="bottom" id="La7-Qa-qq2"/>
+                        <constraint firstItem="MM3-lr-q1U" firstAttribute="top" secondItem="tzz-xx-gck" secondAttribute="top" id="My4-GH-ov9"/>
+                        <constraint firstItem="MM3-lr-q1U" firstAttribute="leading" secondItem="tzz-xx-gck" secondAttribute="leading" constant="20" id="Owc-7H-LFx"/>
+                        <constraint firstItem="qKz-PV-JdR" firstAttribute="top" secondItem="tzz-xx-gck" secondAttribute="top" id="gTu-pz-tbz"/>
+                        <constraint firstAttribute="bottom" secondItem="MM3-lr-q1U" secondAttribute="bottom" id="hUJ-qP-qYC"/>
+                        <constraint firstAttribute="height" constant="40" id="jgX-1x-Qw3"/>
+                        <constraint firstAttribute="trailing" secondItem="qKz-PV-JdR" secondAttribute="trailing" constant="20" id="pjT-4v-pRr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Yb2-J2-aVU" secondAttribute="bottom" id="2GY-GZ-wF3"/>
+                <constraint firstItem="Yb2-J2-aVU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JhB-mF-436"/>
+                <constraint firstItem="tzz-xx-gck" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MDk-lJ-mgf"/>
+                <constraint firstItem="Yb2-J2-aVU" firstAttribute="top" secondItem="tzz-xx-gck" secondAttribute="bottom" constant="10" id="XOy-H1-kN2"/>
+                <constraint firstItem="tzz-xx-gck" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jD3-Z5-Z12"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yb2-J2-aVU" secondAttribute="trailing" id="kaD-am-bPB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tzz-xx-gck" secondAttribute="trailing" id="oYa-nc-cPR"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Frame 352" width="36" height="36.333332061767578"/>
+        <image name="Vector" width="32" height="29.666666030883789"/>
+        <namedColor name="Clear">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeVC" customModule="TUANNM_MV_2563" customModuleProvider="target">
+            <connections>
+                <outlet property="capyView" destination="GaB-VV-k9I" id="evR-Iu-niO"/>
+                <outlet property="rightConstraint" destination="MF2-m4-cUD" id="MU2-8J-ZbN"/>
+                <outlet property="targetLine" destination="i5M-Pr-FkT" id="gRM-Ob-5MK"/>
+                <outlet property="titleLb" destination="JCs-YZ-AfQ" id="9BM-p9-5Lr"/>
+                <outlet property="topConstraint" destination="fi2-sY-YdG" id="2CE-YR-K6b"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="waterImg" destination="7gy-Xo-Ls5" id="b1h-23-YSE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the world of capybara. Let's start by pulling the capybara's nose." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCs-YZ-AfQ">
+                    <rect key="frame" x="15" y="112" width="410" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="WcU-ER-4jm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="#3D7F62"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaB-VV-k9I">
+                    <rect key="frame" x="30" y="192" width="380" height="344"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Layer_1" translatesAutoresizingMaskIntoConstraints="NO" id="1mn-9H-sTc">
+                            <rect key="frame" x="0.0" y="0.0" width="380" height="344"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="7gy-Xo-Ls5">
+                            <rect key="frame" x="182.33333333333334" y="145" width="72.666666666666657" height="114"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7gy-Xo-Ls5" secondAttribute="height" multiplier="72:113" id="oyP-dj-fuU"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1mn-9H-sTc" secondAttribute="trailing" id="6Ff-Zw-kj7"/>
+                        <constraint firstAttribute="trailing" secondItem="7gy-Xo-Ls5" secondAttribute="trailing" constant="125" id="MF2-m4-cUD"/>
+                        <constraint firstItem="1mn-9H-sTc" firstAttribute="top" secondItem="GaB-VV-k9I" secondAttribute="top" id="V5J-yC-PCy"/>
+                        <constraint firstItem="1mn-9H-sTc" firstAttribute="leading" secondItem="GaB-VV-k9I" secondAttribute="leading" id="WES-nt-fI9"/>
+                        <constraint firstItem="7gy-Xo-Ls5" firstAttribute="top" secondItem="GaB-VV-k9I" secondAttribute="top" constant="145" id="fi2-sY-YdG"/>
+                        <constraint firstItem="7gy-Xo-Ls5" firstAttribute="height" secondItem="GaB-VV-k9I" secondAttribute="height" multiplier="0.331395" id="xs3-GK-dc1"/>
+                        <constraint firstAttribute="width" secondItem="GaB-VV-k9I" secondAttribute="height" multiplier="95:86" id="ygc-cY-aRh"/>
+                        <constraint firstAttribute="bottom" secondItem="1mn-9H-sTc" secondAttribute="bottom" id="zNQ-98-juq"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="r0i-NL-jCP">
+                    <rect key="frame" x="20" y="879" width="400" height="2"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JCs-YZ-AfQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="BKw-CZ-SC5"/>
+                <constraint firstItem="r0i-NL-jCP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="CJB-Br-vZI"/>
+                <constraint firstAttribute="bottom" secondItem="r0i-NL-jCP" secondAttribute="bottom" constant="75" id="HuV-6W-x0d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JCs-YZ-AfQ" secondAttribute="trailing" constant="15" id="LNI-BV-dh9"/>
+                <constraint firstItem="GaB-VV-k9I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="130" id="Vyq-C3-ekD"/>
+                <constraint firstAttribute="trailing" secondItem="r0i-NL-jCP" secondAttribute="trailing" constant="20" id="c3M-bV-ylr"/>
+                <constraint firstItem="JCs-YZ-AfQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="eEq-uj-9QU"/>
+                <constraint firstItem="GaB-VV-k9I" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.359833" id="fyW-OE-Hd5"/>
+                <constraint firstItem="GaB-VV-k9I" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yFs-fs-iak"/>
+            </constraints>
+            <point key="canvasLocation" x="130.90909090909091" y="-11.297071129707113"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Layer_1" width="334.33334350585938" height="303"/>
+        <image name="line" width="353" height="2"/>
+        <image name="water" width="72" height="114"/>
+        <namedColor name="#3D7F62">
+            <color red="0.23921568627450981" green="0.49803921568627452" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
